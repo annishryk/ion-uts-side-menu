@@ -1,0 +1,71 @@
+
+<ion-content>
+  <div class="header">
+    <img src="assets/plant13.jpg" />
+  </div>
+
+  <div class="judul">
+    <h4>REGISTER</h4>
+    <h6>Create Your Account!</h6>
+  </div>
+  <ion-grid>
+    <div class="main">
+      <div class="form">
+        <ion-card>
+          <ion-item lines="none">
+            <ion-input
+                [(ngModel)]="name"
+                type="text"
+                placeholder="Name"
+                clearInput value="clear me">
+            </ion-input>
+            <ion-icon name="person-add-outline" size="small"></ion-icon>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-item lines="none">
+            <ion-input
+              [(ngModel)]="email"
+              type="text"
+              placeholder="Email"
+              clearInput value="clear me">
+            </ion-input>
+            <ion-icon name="mail-outline" size="small"></ion-icon>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-item lines="none">
+            <ion-input
+                [(ngModel)]="username"
+                type="text"
+                placeholder="Username"
+                clearInput value="clear me">
+              </ion-input>
+              <ion-icon name="person-outline" size="small"></ion-icon>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-item lines="none">
+            <ion-input
+              [(ngModel)]="password"
+              type="password"
+              placeholder="Password"
+              clearInput value="clear me">
+            </ion-input>
+            <ion-icon name="key-outline" size="small"></ion-icon>
+          </ion-item>
+        </ion-card>
+        <br>
+        <div class="button">
+          <ion-button shape="round" type="button" [routerLink]="['//login']"
+            >SUBMIT
+            <ion-icon slot="end" name="log-in-outline"></ion-icon>
+          </ion-button>
+        </div>
+        <div class="create"><h6>Already you have an account? <a [routerLink]="['//login']">LOGIN</a></h6></div> 
+      </div>
+    </div>
+  </ion-grid>
+</ion-content>
+
+

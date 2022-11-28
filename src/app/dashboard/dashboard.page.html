@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Dashboard</ion-title>
+    <div class="logout" slot="end">
+      <ion-icon
+        name="log-out-outline"
+        slot="end"
+        [routerLink]="['//login']">
+      </ion-icon>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="icon">
+      <img  src="assets/iconPlantNish.png" />
+      <h5>The Ornamental Plant'Nish Shop!</h5>
+    </div>
+
+    <ion-card>
+      <br>
+      <h4>- Best Sellers! -</h4>
+      <div class="list">
+        <ul>
+          <li> 
+            <img src="assets/p1.jpg"  routerLink="//">
+            <h5>Plant</h5>
+            <h6>Rp. 000</h6>
+          </li>
+          <li>
+            <img src="assets/p3.jpg" routerLink="//">
+            <h5>Plant</h5>
+            <h6>Rp. 000</h6>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <img src="assets/p5.jpg" routerLink="//">
+            <h5>Plant</h5>
+            <h6>Rp. 000</h6>
+           </li>
+          <li>
+            <img src="assets/p4.jpg" routerLink="//">
+            <h5>Plant</h5>
+            <h6>Rp. 000</h6>
+          </li>
+        </ul>
+        <ul>
+          <li> 
+            <img src="assets/p9.jpg" routerLink="//">
+            <h5>Plant</h5>
+            <h6>Rp. 000</h6>
+           </li>
+          <li>  
+            <img src="assets/p7.jpg" routerLink="//">
+            <h5>Plant</h5>
+            <h6>Rp. 000</h6>
+          </li>
+        </ul>
+      </div>
+    </ion-card>
+
+    <ion-card>
+      <h4>- Order In 3 Easy Steps! -</h4>
+      <ion-list>
+        <ion-item>
+          <ion-label>Choose Plant</ion-label>
+          <ion-icon name="ellipsis-vertical-circle-outline" slot="end"></ion-icon>
+        </ion-item>
+      </ion-list>
+
+      <ion-list>
+        <ion-item>
+          <ion-label>Schedule Delivery</ion-label>
+          <ion-icon name="alarm-outline" slot="end"></ion-icon>
+        </ion-item>
+      </ion-list>
+
+      <ion-list>
+        <ion-item>
+          <ion-label>Enjoy the Nature</ion-label>
+          <ion-icon name="leaf-outline" slot="end"></ion-icon>
+        </ion-item>
+      </ion-list>
+    </ion-card>
+    
+</ion-content>
